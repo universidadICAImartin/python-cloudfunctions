@@ -5,7 +5,7 @@ def process_file(event, context):
     file_name = event['name']
     bucket_name = event['bucket']
     
-    print(f"File {file_name} uploaded (==) to {bucket_name}. Processing...")
+    print(f"File {file_name} uploaded (===) to {bucket_name}. Processing...")
 
     storage_client = storage.Client()
     bucket = storage_client.bucket(bucket_name)
